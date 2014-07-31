@@ -10,7 +10,7 @@ if __name__ == '__main__':
                                                  'adr': '/dev/ttyUSB0',
                                                  'ssh_host': 'localhost',
                                                  'ssh_user': 'env',
-                                                 'ssh_keypath': '/home/env/.ssh/id_rsa',
+                                                 'ssh_keypath': None,
                                                  'ssh_password': None,
                                                  'input_path': '/tmp/commands',
                                                  'output_path': '/tmp/output', 
