@@ -124,7 +124,7 @@ class Client(Thread):
     def _deliver_remote(self):
         """Deliver results from reader to remote host."""
         sftp = self._ssh.open_sftp() 
-        with sftp.open(self.output_path, 'wb') as f:
+        with sftp.open(self.output_path, 'a+b') as f:
             f.write('\n'.join(self._reader.lines))
 
     def _remove_input_commands(self):
